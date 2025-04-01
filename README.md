@@ -1,8 +1,8 @@
 # Banking System Replay Attack Mitigation
 
-This project implements a secure banking system API that mitigates replay attacks using a nonce chain, timestamps, and request signatures. Below is the technical explanation of the approach, detailing how the client and server interact to ensure the authenticity and uniqueness of each transaction request.
+This project implements a secure banking system API that mitigates replay attacks using a nonce chain, timestamps, and request signatures. Below is the explanation of the approach, detailing how the client and server interact to ensure the authenticity and uniqueness of each transaction request.
 
-## Technical Explanation
+## Explanation
 
 This plan implements a replay attack mitigation strategy for a banking system API by using a nonce chain, timestamps, and request signatures to ensure the authenticity and uniqueness of each transaction request.
 
@@ -20,13 +20,10 @@ This plan implements a replay attack mitigation strategy for a banking system AP
 ## Usage
 
 To run the banking system:
-1. Start the server: `go run server.go`
-2. Run the client to perform transactions: `go run client.go`
+1. Clone the repository into your local pc `git clone https://github.com/abhishekshelar126200/Replay_Mitigation`
+1. Navigate to the server directory `cd server`
+2. Start the server: `go run server.go`
+3. Navigate to the server directory `cd client`
+4. Run the client to perform transactions: `go run client.go`
 
 The client will send transaction requests (e.g., deposits and withdrawals), and the server will validate them to prevent replay attacks.
-
-## Security Notes
-
-- Ensure all communication is over HTTPS to prevent interception of nonces and signatures.
-- Store the `userSecret` securely (e.g., encrypted in a database or key management system).
-- Implement rate limiting to prevent flooding attacks.
