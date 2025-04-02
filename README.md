@@ -22,8 +22,8 @@ This plan implements a replay attack mitigation strategy for a banking system AP
 To run the banking system:
 1. Clone the repository into your local pc `git clone https://github.com/abhishekshelar126200/Replay_Mitigation`
 1. Navigate to the server directory `cd server`
-2. Start the server: `go run server.go`
+2. Start the server: `go run main.go`
 3. Navigate to the server directory `cd client`
-4. Run the client to perform transactions: `go run client.go`
+4. Run the client to perform transactions: `go run main.go`
 
 The client will send transaction requests (e.g., deposits and withdrawals), and the server will validate them to prevent replay attacks.
